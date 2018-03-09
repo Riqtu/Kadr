@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+    .main {
+        background: url("../img/Mt_Baker.jpg") center center / cover no-repeat;
+    }
+ 
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
