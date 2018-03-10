@@ -8,8 +8,40 @@
     <title>Кадр</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    jQuery(document).ready(function($) {
+        $(window).load(function() {
+            setTimeout(function() {
+                $('.loader').fadeOut('slow', function() {});
+            }, 300);
+        });
+    });
+    </script>
 </head>
 <body>
+    <div class="loader">
+            <div class='loader__demo'>
+                    <div class='circle'>
+                      <div class='inner'></div>
+                    </div>
+                    <div class='circle'>
+                      <div class='inner'></div>
+                    </div>
+                    <div class='circle'>
+                      <div class='inner'></div>
+                    </div>
+                    <div class='circle'>
+                      <div class='inner'></div>
+                    </div>
+                    <div class='circle'>
+                      <div class='inner'></div>
+                    </div>
+                  </div>
+    </div>
+    
     <header><img src="img/logo2.png" alt=""></header>
     <div class="main">
         <div class="main__red"></div>
@@ -21,7 +53,7 @@
                 производство отечественной кино - и теле - продукции
             </h3>
         </div>
-        <div class="main__films">
+        <div class="main__films" onclick="films()">
             ФИЛЬМЫ
         </div>
     </div>
@@ -39,7 +71,8 @@
         <source src="img/Mt_Baker.webm" type="video/webm">
     </video>
     </div>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <div class="gallery"></div>
     <script src="js/main.js"></script>
 </body>
 </html>
