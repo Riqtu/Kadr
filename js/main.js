@@ -44,6 +44,6 @@ function films__exit(){
     }, 1);
 }
 
-function news(){
-    $(".news").css("top","15%");
+function newsScroll(){
+    $(".news__elem").offset({left:-100})
 }
